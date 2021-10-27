@@ -1,18 +1,18 @@
 const takeUntil = (array, callback) => {
-  let output = [];
-  let flag = true;
+  let output = []
+  let flag = true
   array.forEach((item) => {
-    //console.log(item)
-    //console.log(callback(item))
-    if (callback(item)) {
-      //Exit out of the callback and
-      flag = false;
-    } else if (!callback(item) && flag) {
-      output.push(item);
+
+    if(callback(item)){
+     //Exit out of the callback and 
+      flag = false
     }
-  });
-  return output;
-};
+    else if(!callback(item) && flag){
+      output.push(item)
+    }
+  })
+  return output
+}
 
 
 
@@ -25,3 +25,7 @@ console.log('---');
 const data2 = ["I've", "been", "to", "Hollywood", ",", "I've", "been", "to", "Redwood"];
 const results2 = takeUntil(data2, x => x === ',');
 console.log(results2);
+
+const data3 = [1, 5, 6, 9, 8, 4, 3, 6, 5];
+const results3 = takeUntil(data3, x => x === 4);
+console.log(results3);
