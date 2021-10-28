@@ -1,14 +1,14 @@
 const takeUntil = (array, callback) => {
-  let output = []
+  let output = [];
 
-  for(let item of array){
-    if(callback(item)){
-      return output 
+  for (let item of array) {
+    if (callback(item)) {
+      return output;
     }
-    output.push(item)
+    output.push(item);
   }
-  return output
-}
+  return output;
+};
 
 
 
