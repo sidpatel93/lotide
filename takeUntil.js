@@ -1,16 +1,12 @@
 const takeUntil = (array, callback) => {
   let output = []
-  let flag = true
-  array.forEach((item) => {
 
+  for(let item of array){
     if(callback(item)){
-     //Exit out of the callback and 
-      flag = false
+      return output 
     }
-    else if(!callback(item) && flag){
-      output.push(item)
-    }
-  })
+    output.push(item)
+  }
   return output
 }
 
