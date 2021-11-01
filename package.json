@@ -1,7 +1,8 @@
 {
-  "name": "lotide",
+  "name": "@sid-patel/lotide",
   "version": "1.0.0",
-  "description": "",
+  "description": "This is a mini clone of the lodash library for learning purposes.",
+  "keywords": ["lotide", "lodash mini clone"],
   "main": "assertArraysEqual.js",
   "directories": {
     "test": "test"
@@ -13,7 +14,7 @@
     "type": "git",
     "url": "git+https://github.com/sidpatel93/lotide.git"
   },
-  "author": "",
+  "author": "Siddharth Patel",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/sidpatel93/lotide/issues"
